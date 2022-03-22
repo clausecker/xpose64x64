@@ -54,7 +54,7 @@ FUNC(xpose_half)
 	shl v7.2d, \hi\().2d, #\shift
 	bif \lo\().16b, v7.16b, \mask\().16b
 	bit \hi\().16b, v6.16b, \mask\().16b
-.endmacro
+.endm
 
 	# 1st step: transpose 2x2 bit matrices
 	movi	v0.16b, #0x55
@@ -107,7 +107,7 @@ FUNC(xpose_half)
 	mov	\lo\().2d, \orig\().2d
 	sli	\lo\().16b, \hi\().16b, #4
 	sri	\hi\().16b, \orig\().16b, #4
-.endmacro
+.endm
 
 	# 3rd step: transpose 8x8 bit matrices
 	# special code is needed here since we need to
