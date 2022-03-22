@@ -1,0 +1,10 @@
+High performance implementation of a 64x64 bit matrix transposition
+kernel for ARM64.  The code in this repository was written as
+supplementary material for my Stack Overflow answer
+
+    https://stackoverflow.com/a/71555778/417501
+
+Feel free to use this code under the terms and conditions of the
+2-clause BSD license.
+
+Copyright (c) 2022 Robert Clausecker.  All rights reserved.
