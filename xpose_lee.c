@@ -14,7 +14,8 @@ void xpose_ref(unsigned long long A[64])
 
 	memcpy(A, B, sizeof B);
 }
-   
+
+/* https://stackoverflow.com/a/71556367/417501 */
 void xpose_lee(uint64_t *pSrc)
     {
         uint64_t aDst[64], *pDst = aDst, *pSrcOrig = pSrc;

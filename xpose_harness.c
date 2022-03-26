@@ -76,7 +76,7 @@ static void testpattern(void (*xpose)(unsigned long long[64]))
 
 	size_t i;
 
-	for (i = 8; i < 64; i++) {
+	for (i = 0; i < 64; i++) {
 		printf("*** %zu\n", i);
 		memset(A, 0, sizeof A);
 		A[i] = ~0ULL;
