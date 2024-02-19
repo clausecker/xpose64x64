@@ -5,6 +5,7 @@
 extern void xpose_asm(unsigned long long[64]);
 extern void xpose_lee(unsigned long long[64]);
 extern void xpose_ref(unsigned long long[64]);
+extern void xpose_noob(unsigned long long[64]);
 
 static int check(unsigned long long A[64], void (*xpose)(unsigned long long[64]))
 {
@@ -99,4 +100,10 @@ extern int main()
 	puts("lee");
 	for (i = 0; i < N; i++)
 		cycle(xpose_lee);
+
+#if 0
+	puts("noob");
+	for (i = 0; i < N; i++)
+		cycle(xpose_noob);
+#endif
 }

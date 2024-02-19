@@ -12,7 +12,7 @@
 #endif
 
 typedef void xpose_func(unsigned long long[64]);
-extern xpose_func xpose_asm, xpose_lee, xpose_ref;
+extern xpose_func xpose_asm, xpose_lee, xpose_ref, xpose_noob;
 
 static const struct xpose_method {
 	const char *name;
@@ -21,6 +21,7 @@ static const struct xpose_method {
 	{ "ref", xpose_ref },
 	{ "lee", xpose_lee },
 	{ "fuz", xpose_asm },
+//	{ "noob", xpose_noob },
 	{ NULL, NULL },
 };
 
